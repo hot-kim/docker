@@ -5,6 +5,8 @@ RUN apt-get install -y nginx nginx
 RUN echo "\ndaemon off;" >> /etc/nginx/nginx.conf
 RUN chown -R www-data:www-data /var/lib/nginx
 
+ADD default /etc/nginx/sites-available/default
+
 WORKDIR /etc/nginx
 
 CMD ["nginx"]
