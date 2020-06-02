@@ -5,7 +5,7 @@ server {
     root /var/www/html;
     autoindex on;                   # 서버 리스팅
 
-    index index.html index.htm;
+    index index.html index.htm index.nginx-debian.html;
 
     server_name _;
 
