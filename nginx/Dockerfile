@@ -7,7 +7,7 @@ RUN chown -R www-data:www-data /var/lib/nginx
 
 WORKDIR /etc/nginx
 
-ADD default.conf /etc/nginx/sites-enabled/default
+ADD default /etc/nginx/sites-enabled/default
 
 CMD ["nginx"]
 
